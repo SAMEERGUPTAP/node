@@ -1,0 +1,39 @@
+<div class="sidebar" [ngClass]="slideLeft ? 'slide' : ''">
+  <div class="sidebar-cover">
+    <div class="logo text-center pd-tb-30 border-b">
+      <img src="../assets/images/logo.png" alt="logo">
+    </div>
+    <div class="nav">
+      <ul *ngFor="let list of list">
+        <li>
+          <a href="#"> {{ list.home  | uppercase }}</a>
+
+        </li>
+        <li>
+          <a href="#"> {{ list.about | uppercase }}</a>
+
+        </li>
+        <li>
+          <a href="#">{{ list.service | uppercase }}</a>
+
+        </li>
+        <li>
+          <a href="#"> {{ list.protofolio | uppercase }}</a>
+
+        </li>
+
+        <li>
+          <a href="#">{{ list.contact | uppercase }}</a>
+
+        </li>
+      </ul>
+    </div>
+    <div class="arrow"  (click)="slideMe()" [ngClass]="slideLeft ? 'slideright' : ''">
+      <i class="fa" aria-hidden="true" [ngClass]="slideLeft ? 'fa-angle-right' : 'fa-angle-left'"></i>
+    </div>
+
+    <div class="socail-links">
+      <app-links></app-links>
+    </div>
+  </div>
+</div>

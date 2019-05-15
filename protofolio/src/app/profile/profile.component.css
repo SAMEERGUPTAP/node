@@ -1,0 +1,81 @@
+.profile{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(-50%);
+}
+.profile-circle span{
+    display: inline-block;
+    width: 211px;
+    height: 211px;
+    border-radius: 100%;
+    border: 6px solid #838fa0;
+    overflow: hidden;
+}
+.profile-circle span img{
+    max-width:100%;
+}
+.profile-text{
+    width:100%;
+    float: left;
+    text-align:center;
+}
+.profile-text h6{
+    font-size: 24px;
+    margin: 15px 0;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.profile-text span{
+    font-weight: 600;
+    font-size: 28px;
+}
+.profile-text h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 15px 0 10px 0;
+    letter-spacing: 0.5px;
+}
+.profile-text h2 span{
+    font-size: 45px;
+    font-weight: 500;
+    color: #e3872d;
+}
+.down-arrow{
+    width: 100%;
+    float: left;
+    color: #fff;
+    position: absolute;
+    bottom: -65%;
+    font-size: 30px;
+    animation-name: slidein;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: backwards;
+}
+.down-arrow i{
+    cursor: pointer;
+}
+
+@keyframes slidein {
+    from {
+        bottom: -65%;
+    }
+  
+    to {
+        bottom: -50%;
+    }
+  }

@@ -1,0 +1,154 @@
+.about{
+    width:100%;
+    float: left;
+}
+.box-border{
+    width: 92%;
+    float: left;
+    height: 431px;
+    border: 8px solid #041230;
+    position: relative;
+}
+.about-heading{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin: 0 0 130px 0;
+    position: relative;
+}
+.about-heading p{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #737272;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.about-heading:before{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: #e3872d;
+    left: -25px;
+    top: 0;
+}
+.about-img{
+    max-width: 100%;
+    position: absolute;
+    top: -50px;
+    left: -32px;
+}
+.about-text p strong{
+    color: #E3872D;
+}
+.about-text h4{
+    letter-spacing: 0.3px;
+    width: 100%;
+    float: left;
+    margin: -48px 0 5px 0;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+}
+.about-text p{
+    font-size: 15px;
+    line-height: 26px;
+    color: #525151;
+    letter-spacing: 0.3px;
+}
+.about-text h4 span{
+    font-weight: 600;
+    color: #e3872d;
+}
+.about_short_contact_wrap{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.about_short_contact_wrap ul, .buttons_wrap ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0;
+}
+.about_short_contact_wrap ul li{
+    margin: 0px 0px 10px 0px;
+    width: 50%;
+    float: left;
+    font-size: 13px;
+}
+.about_short_contact_wrap ul li:nth-of-type(2n) {
+    clear: right;
+}
+.about_short_contact_wrap ul li label{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 13px;
+    color: #000;
+    min-width: 85px;
+    display: inline-block;
+}
+.about_short_contact_wrap ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.about_short_contact_wrap ul li a:hover {
+    color: #BD0A0D;
+}
+.buttons_wrap {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.buttons_wrap ul li {
+    margin: 0px 30px 10px 0px;
+    float: left;
+}
+.buttons_wrap ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #E3872D;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding: 12px 35px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+}
+.buttons_wrap ul li a:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    height: 100%;
+    left: -25%;
+    width: 0%;
+    background-color: #041230;
+    transform: skew(50deg);
+    transition-duration: .6s;
+    z-index: 1;
+}
+.buttons_wrap ul li a span {
+    position: relative;
+    z-index: 2;
+}
+.buttons_wrap ul li a:hover:before {
+    width: 180%;
+}

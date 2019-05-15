@@ -1,0 +1,35 @@
+
+<div class="form">
+  <form #templateFrom="ngForm" (ngSubmit)="send(templateFrom.value)">
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" [(ngModel)]="name" required  minlength="5"/>
+            <div *ngIf="templateFrom.controls['name']?.errors?.required && templateFrom.controls['name'].touched" class="alert alert-danger">Please enter Name</div>
+          </div>
+        </div>
+        <div class="col col-sm-12">
+          <div class="form-group">
+            <label>password</label>
+            <input type="text" class="form-control" name="password" [(ngModel)]="password" required  pattern="^[0-9]{5,10}$"/>
+            <div *ngIf="templateFrom.controls['password']?.errors?.required && templateFrom.controls['password'].touched" class="alert alert-danger">Please enter Password</div>
+            <div *ngIf="templateFrom.controls['password']?.errors?.pattern" class="alert alert-danger">Please enter valid Password</div>
+          </div>
+        </div>
+        <div class="col col-sm-12">
+          <div class="form-group">
+            <label>Message</label>
+            <input type="text" class="form-control" name="Message" [(ngModel)]="message"/>
+          </div>
+        </div>
+        <div class="col col-sm-12 text-right">
+            <button class="btn btn-primary" [disabled]="templateFrom.invalid">Submit</button>
+        </div>
+      </div>
+      
+  
+    </div>
+  </form>
+</div>
