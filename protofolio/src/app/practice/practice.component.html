@@ -1,0 +1,56 @@
+<div class="container">
+  <ng-container [ngSwitch]="count">
+    <div class="alert alert-danger" *ngSwitchCase="1">
+      Danger
+    </div>
+    <div class="alert alert-warning" *ngSwitchCase="2">
+      Warning
+    </div>
+    <div class="alert alert-danger" *ngSwitchDefault>
+      Default
+    </div>
+  </ng-container>
+  {{count}}
+  <button class="btn btn-primary" (click)="change()">Change</button>
+
+  <table class="table table-strippped mt-20">
+    <thead>
+      <tr>
+        <th>
+          Id
+        </th>
+        <th>
+          Name
+        </th>
+        <th>
+          Address
+        </th>
+        <th>
+          Contact
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of data; let ind = index; let first = first; let last = last;" [style.background]="first ? 'whitesmoke' : ''">
+        <td>
+          {{ data.id }}
+        </td>
+        <td>
+          {{ data.name | tirm:3:'..' }}
+        </td>
+        <td>
+          {{ data.address | reverseStr  }}
+        </td>
+        <td>
+          {{ data.contact }}
+        </td>
+        <td>
+         <button class="btn btn-danger" (click)="Delete(ind)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

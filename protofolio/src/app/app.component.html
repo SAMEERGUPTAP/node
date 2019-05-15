@@ -1,0 +1,14 @@
+
+<!-- <router-outlet></router-outlet> -->
+
+<div class="container-fluid pd-l-300" [ngClass]="reducePad ? 'reducePadding' : ''">
+    <app-sidebar (valueChange)="changePadding($event)" [sendItem]="item"></app-sidebar>
+    <app-slider></app-slider>
+    <div class="about" #abt>
+        <app-about></app-about>
+    </div>
+    <div class="app-form">
+        <app-contact-from></app-contact-from>
+        <app-practice></app-practice>
+    </div>
+</div>

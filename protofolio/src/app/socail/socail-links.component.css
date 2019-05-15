@@ -1,0 +1,20 @@
+ul.links{
+    width: 100%;
+float: left;
+list-style-type: none;
+padding: 0;
+text-align: center;
+}
+ul.links li{
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+}
+ul.links li a{
+    color: #fff;
+    transition: all .3s ease;
+}
+ul.links li a:hover{
+    color: #e3872d;
+    
+}
